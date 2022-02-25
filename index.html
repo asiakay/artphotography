@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- jquery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    
+    <title>Art Photography</title>
+
+
+    
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+        <link href="w3.css" rel="stylesheet" type="text/css" />
+
+
+            <link href="fonts.css" rel="stylesheet" type="text/css" />
+    
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+</style>
+    
+
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+  </head>
+  <body>
+
+    
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Photos</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Shop</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
+  </div>
+</nav>
+
+    <!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<div class="w3-opacity">
+<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+<div class="w3-clear"></div>
+<header class="w3-center w3-margin-bottom">
+  <h1 style="font-size: 3em;"><b>Art Photography by Asia K.</b></h1>
+  <p style="font-size: 1.5em;"><b>"The camera is much more than a recording apparatus, it is a medium via which messages reach us from another world." - Orson Welles</b></p>
+
+  <!-- Contact Button to Trigger Contact Modal -->
+  <p class="w3-padding-16"><button class="btn btn-primary turned-button" id="mbtn">Contact</button></p>
+</header>
+</div>
+
+  <!-- Contact Modal -->
+<div id="modalDialog" class="modal">
+    <div class="modal-content animate-top">
+        <div class="modal-header">
+            <h5 class="modal-title">Contact Us</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+            </button>
+        </div>
+        <form method="post" id="contactFrm">
+        <div class="modal-body">
+            <!-- Form submission status -->
+            <div class="response"></div>
+			
+            <!-- Contact form -->
+            <div class="form-group">
+                <label>Name:</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required="">
+            </div>
+            <div class="form-group">
+                <label>Email:</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required="">
+            </div>
+            <div class="form-group">
+                <label>Message:</label>
+                <textarea name="message" id="message" class="form-control" placeholder="Your message here" rows="6"></textarea>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        </form>
+    </div>
+</div>
+
+  
+  <!-- Photo Grid 1-->
+<div class="w3-row" id="myGrid" style="margin-bottom:128px">
+  <div class="w3-third">
+      <img src="/images/purplebloom.jpeg" style="width:100%">
+    <img src="/images/pond_light1.jpeg" style="width:100%">
+         <img src="/images/blueswamp.jpeg" style="width:100%">
+        <img src="/images/seaport_bird.jpeg" style="width:100%">
+
+
+    <img src="/images/encore.jpeg" style="width:100%">
+    <img src="/images/commuterrail.jpeg" style="width:100%">
+
+  </div>
+
+<!-- Next Grid Piece -->
+  <div class="w3-third">
+    <img src="/images/pink_yellows.jpeg" style="width:100%">
+    <img src="/images/statues_seaport.jpeg" style="width:100%">
+    <img src="/images/underground_light.jpeg" style="width:100%">
+    <img src="/images/abstract_silver.jpeg" style="width:100%">
+    <img src="/images/backbay_pink.jpeg" style="width:100%">
+  </div>
+
+
+<!-- third grid -->
+  <div class="w3-third">
+    <img src="/images/spring_flowers.jpeg" style="width:100%">
+    <img src="/images/lush_woods.jpeg" style="width:100%">
+    <img src="/images/bronze_bird.jpeg" style="width:100%">
+    <img src="/images/kendall.jpeg" style="width:100%">
+
+
+  </div>
+</div>
+  
+  <!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px"> 
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium"> <b>Created with ❤️ by</b> <a href="https://www.asialakay.net" target="_blank" class="w3-hover-text-green">asialakay.net</a></p>
+</footer>
+  
+    <script src="script.js"></script>
+
+    <!-- sidebar  -->
+        <script src="sidebar.js"></script>
+  </body>
+</html>
