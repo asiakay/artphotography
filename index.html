@@ -129,34 +129,42 @@
     
 
         <!-- Contact Anchor Section  -->
-<h2><a name="contact">Contact</a></h2>
+<fieldset>
+  <legend><h2><a name="contact">Get In Touch</a></h2></legend>
 
 <!-- Contact Form modify this form HTML and place wherever you want your form -->
-<form
-  action="https://formspree.io/f/xrgjkzdr"
+<div class="container">
+<form action="https://formspree.io/f/xrgjkzdr"
   method="POST"
 >
-
-    <label>
-    Your name:
+<div class="row">
+    <div class="col-25">
+    <label>Name</label>
+    </div>
+  <div class="col-75">
     <input type="text" name="name">
-  </label>
-  
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
+</div>
+  <div class="col-25">
+  <label>Email</label>
+  </div>
+  <div class="col-75">
+  <input type="email" name="email">
+ </div>
+  <div class="col-25">
+ <label>Message</label>
+ </div>
+  <div class="col-75">
     <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
+     </div>
 
+  <!-- your other form fields go here -->
+  <div class="row">
+  <input type="submit">
+  </div>
+</form>
+</div>
   
-  
-  
+  </fieldset>
   <!-- End Page Content -->
 </div>
 
