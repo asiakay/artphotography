@@ -31,6 +31,8 @@
     
     <link href="style.css" rel="stylesheet" type="text/css" />
 
+        <link href="form.css" rel="stylesheet" type="text/css" />
+
      <link href="nav.css" rel="stylesheet" type="text/css" />
 
         <link href="w3.css" rel="stylesheet" type="text/css" />
@@ -51,7 +53,6 @@
   <body>
 
     
-<<<<<<< HEAD
 <!-- Slide nav -->
 
 <div id="navbar">
@@ -60,7 +61,7 @@
 </div>
 
     
-=======
+
 <!-- Sidebar -->
 <nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
@@ -74,7 +75,6 @@
     <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
   </div>
 </nav>
->>>>>>> origin/main
 
     <!-- !PAGE CONTENT! -->
 <div class="w3-content" style="max-width:1500px">
@@ -131,6 +131,31 @@
         <!-- Contact Anchor Section  -->
 <h2><a name="contact">Contact</a></h2>
 
+<!-- Contact Form modify this form HTML and place wherever you want your form -->
+<form
+  action="https://formspree.io/f/xrgjkzdr"
+  method="POST"
+>
+
+    <label>
+    Your name:
+    <input type="text" name="name">
+  </label>
+  
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
+
+  
+  
   
   <!-- End Page Content -->
 </div>
